@@ -23,22 +23,10 @@ public class DoFile {
 	List<Double> Minute_end = new ArrayList<Double>();
 	List<String> Price = new ArrayList<String>();
 	
-	public DoFile()
-	{
-		
-	}
-	
-	public DoFile(JSONObject json)
-	{
-		object = json;
-		
-	}
-	
 	
 	public String readFile()
 	{
 		String read ="";
-
 				 try
 		        {
 		            BufferedReader in = new BufferedReader(new FileReader(new File("D:\\Java\\promotion1.log")));
@@ -114,32 +102,25 @@ public class DoFile {
 	{
 			int loop = 0;
 			JSONObject obj = new JSONObject();
-			 String concat = "";
 			 Calling calls = new Calling();
 			 calls.getPrice(Minute_begin,Minute_end);
 			 Price = calls.getPrice();
-			 
-			
 		    while(loop<MobileNumber.size())
 		    {
 		    	  obj.put("person"+loop," Phone num "+MobileNumber.get(loop)+" Price: "+Price.get(loop));
 		    	loop++;
-		    }
-		    obj.put("22/06/2013",concat);    
+		    }  
 		    try {
 		    	FileWriter file = new FileWriter("C:\\xampp\\htdocs\\promotion_output.json");
 		    	file.write(obj.toString());
 		    	System.out.println("File Writing is successful");
 		    	file.flush();
 		    	file.close();
-		    	
 		    }
 		    catch(IOException ex)
 		    {
 		    	ex.printStackTrace();
 		    }
-				
+			
 	}
-
-
 }

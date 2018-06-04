@@ -8,7 +8,7 @@ public class Calling {
 
 	List<Double> Total_Time = new ArrayList<Double>();
 	List<String> Price = new ArrayList<String>();
-	LocalTime  From = LocalTime.parse("00:00");
+	LocalTime  From = LocalTime.MIN;
  
 	public double getMinute(LocalTime To)
 	{
@@ -39,8 +39,7 @@ public class Calling {
 	    	}
 	    	loop++;
 	    }
-	    
-		
+	   
 	}
 
 	public List<String> getPrice()
