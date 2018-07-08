@@ -4,3 +4,5 @@ text is completed
 im on fixing this bug
 still fix this bug
 >>>>>>> Stashed changes
+
+finish main  wait to add strash002
