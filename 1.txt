@@ -10,3 +10,4 @@ finish main  wait to add strash002
 =======
 strach 002
 >>>>>>> Stashed changes
+complete-wait for strash 003
