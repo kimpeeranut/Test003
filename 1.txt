@@ -16,3 +16,5 @@ complete-wait for strash 003
 =======
 strach 003
 >>>>>>> Stashed changes
+
+strash 004
