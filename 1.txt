@@ -18,3 +18,5 @@ strach 003
 >>>>>>> Stashed changes
 
 strash 004
+
+commit 005
