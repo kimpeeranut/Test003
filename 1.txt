@@ -5,4 +5,8 @@ im on fixing this bug
 still fix this bug
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
 finish main  wait to add strash002
+=======
+strach 002
+>>>>>>> Stashed changes
